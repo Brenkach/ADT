@@ -28,6 +28,7 @@ public:
     // Методи видалення
     void popFront();
     void popBack();
+
     //Доступ до елементів
     T& operator[](size_t index)const;
 
@@ -35,4 +36,7 @@ public:
     void insertAt(size_t index, const T& value);
     void removeAt(size_t index);
 
+    //Методи для роботи з розміром
+    bool isEmpty() const;
+    size_t Size() const;
 };
