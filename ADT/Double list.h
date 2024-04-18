@@ -45,6 +45,15 @@ public:
     //Метод доступу за індексом
     T& operator[](size_t index) const;
 
+    // Stream insertion
+    friend ostream& operator<<(ostream& os, const DoubleList<T>& list) {
+        shared_ptr<Node2<T>> current = list.head;
+        while (current != nullptr) {
+            os << current->data << " ";
+            current = current->next;
+        }
+        return os;
+    }
 };
 
 
@@ -170,4 +179,15 @@ T& DoubleList<T>::operator[](size_t index) const {
         throw std::out_of_range("Index out of range");
     shared_ptr<Node2<T>> current = getNode(index);
     return current->data;
+}
+
+template<typename T>
+shared_ptr<Node2<T>> DoubleList<T>::getNode(size_t index) const {
+    if (index >= size)
+        throw out_of_range("Index out of range");
+    shared_ptr<Node2<T>> current = head;
+    for (size_t i = 0; i < index; ++i) {
+        current = current->next;
+    }
+    return current;
 }

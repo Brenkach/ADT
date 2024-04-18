@@ -44,7 +44,7 @@ public:
     bool Find(const T& value)const;
     
     // friend operators
-    friend sostream& operator<<(ostream& os, const SingleList<T> list) {
+    friend ostream& operator<<(ostream& os, const SingleList<T> list) {
         shared_ptr<Node<T>> current = list.head;
         while (current != nullptr) {
             os << current->data << " ";
