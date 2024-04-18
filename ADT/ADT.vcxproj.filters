@@ -18,5 +18,8 @@
     <ClInclude Include="One_list.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Double list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
