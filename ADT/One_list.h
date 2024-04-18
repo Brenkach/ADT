@@ -28,4 +28,11 @@ public:
     // Методи видалення
     void popFront();
     void popBack();
+    //Доступ до елементів
+    T& operator[](size_t index)const;
+
+    //Додавання та віднімання за індексом
+    void insertAt(size_t index, const T& value);
+    void removeAt(size_t index);
+
 };
