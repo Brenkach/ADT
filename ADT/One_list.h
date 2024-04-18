@@ -25,5 +25,7 @@ public:
     void pushFront(const T& value);
     void pushBack(const T& value);
 
-
+    // Методи видалення
+    void popFront();
+    void popBack();
 };
