@@ -39,4 +39,7 @@ public:
     //Методи для роботи з розміром
     bool isEmpty() const;
     size_t Size() const;
+
+    //Метод пошуку
+    bool Find(const T& value)const;
 };
