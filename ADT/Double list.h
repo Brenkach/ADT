@@ -34,6 +34,10 @@ public:
     //Додавання та віднімання за індексом
     void insertAt(size_t index, const T& value);
     void removeAt(size_t index);
+
+    //Методи для роботи з розміром
+    size_t Size() const { return size; }
+    bool isEmpty() const { return size == 0; }
 };
 
 
