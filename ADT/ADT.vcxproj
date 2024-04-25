@@ -133,6 +133,8 @@
     <ClInclude Include="One_list.h" />
     <ClInclude Include="Queue.h" />
     <ClInclude Include="QueueArray.h" />
+    <ClInclude Include="Stack.h" />
+    <ClInclude Include="StackArray.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
